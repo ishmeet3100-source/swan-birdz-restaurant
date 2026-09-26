@@ -19,7 +19,7 @@ const signatureDishes = [
   {
     title: 'Butter Chicken',
     price: '₹289',
-    description: 'Rich, creamy, and deeply flavorful with a classic home-style feel.',
+    description: 'Rich, creamy, and deeply flavorful with a classic home-style taste.',
     image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=900&q=80',
   },
   {
