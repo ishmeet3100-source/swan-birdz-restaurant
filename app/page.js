@@ -12,7 +12,7 @@ const cuisines = [
 const signatureDishes = [
   {
     title: 'Paneer Tikka',
-    description: 'Perfectly grilled and charred with a smoky, spiced finish.',
+    description: 'Perfectly grilled and charred with a smoky, spicy finish.',
     image:
       'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=900&q=80',
   },
@@ -24,42 +24,27 @@ const signatureDishes = [
   },
   {
     title: 'Veg Biryani',
-    description: 'Fragrant rice layered with spices, vegetables, and comforting flavors.',
+    description: 'Fragrant basmati rice layered with spices and fresh vegetables.',
     image:
       'https://images.unsplash.com/photo-1654922207993-2952fec328ae?auto=format&fit=crop&w=900&q=80',
   },
   {
     title: 'Chicken Noodles',
-    description: 'Wok-tossed noodles packed with bold, savory taste.',
+    description: 'Wok-tossed noodles packed with savory flavors and bold taste.',
     image:
       'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80',
   },
   {
     title: 'Masala Dosa',
-    description: 'Crisp, golden, and satisfying with the perfect dosa texture.',
+    description: 'Crispy, golden, and satisfying with sambar and chutney.',
     image:
       'https://images.unsplash.com/photo-1625944230945-1b7d7d0d6f4b?auto=format&fit=crop&w=900&q=80',
   },
   {
     title: 'Gulab Jamun',
-    description: 'A sweet ending with warm, syrupy richness and classic taste.',
+    description: 'A sweet ending to every meal with warm, syrupy richness.',
     image:
       'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80',
-  },
-];
-
-const highlights = [
-  {
-    title: 'Wide variety',
-    text: 'From classic comfort food to multi-cuisine favorites, there is always something for everyone.',
-  },
-  {
-    title: 'Warm hospitality',
-    text: 'A welcoming atmosphere for family meals, friendly gatherings, and special moments.',
-  },
-  {
-    title: 'Fresh ingredients',
-    text: 'Quality food prepared with care, flavor, and consistency in every bite.',
   },
 ];
 
@@ -81,6 +66,21 @@ const gallery = [
   'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80',
   'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80',
   'https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80',
+];
+
+const highlights = [
+  {
+    title: 'Wide variety',
+    text: 'From classic comfort food to multi-cuisine favorites, there is always something for everyone.',
+  },
+  {
+    title: 'Warm hospitality',
+    text: 'A welcoming atmosphere for family meals, friends, and special moments.',
+  },
+  {
+    title: 'Fresh ingredients',
+    text: 'Quality food prepared with care, flavor, and consistency in every bite.',
+  },
 ];
 
 const testimonials = [
@@ -105,8 +105,9 @@ export default function Home() {
   return (
     <main className="page-shell">
       <header className="site-header">
-        <nav className="nav container">
+        <nav className="nav container" aria-label="Main navigation">
           <div className="brand">SWAN BIRDZ</div>
+
           <div className="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -114,7 +115,8 @@ export default function Home() {
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
           </div>
-          <button className="primary-button">Book Table</button>
+
+          <button className="primary-button" type="button">Book Table</button>
         </nav>
       </header>
 
@@ -123,12 +125,12 @@ export default function Home() {
           <p className="eyebrow">Dhuri’s favorite dining destination</p>
           <h1>Fresh flavors. Family moments. Memorable dining.</h1>
           <p>
-            Experience a wide variety of cuisines, signature dishes, and warm hospitality at
-            Swan Birdz.
+            Experience a wide variety of cuisines, signature dishes, and warm hospitality at Swan
+            Birdz.
           </p>
           <div className="hero-actions">
-            <button className="primary-button">View Menu</button>
-            <button className="secondary-button">Book Table</button>
+            <button className="primary-button" type="button">View Menu</button>
+            <button className="secondary-button" type="button">Book Table</button>
           </div>
         </div>
 
@@ -152,14 +154,14 @@ export default function Home() {
           <p className="eyebrow">About us</p>
           <h2>A place where every meal feels special</h2>
           <p>
-            Swan Birdz is a vibrant food destination in Dhuri known for serving a wide range of
+            Swan Birdz is a lively food destination in Dhuri, known for serving a wide range of
             delicious food options for every taste. From comforting North Indian flavors to
-            sizzling Chinese dishes, savory fast food, and refreshing beverages, Swan Birdz brings
-            together taste, variety, and hospitality in one place.
+            sizzling Chinese dishes, savory fast food, and refreshing beverages, we bring together
+            taste, variety, and hospitality in one place.
           </p>
           <p>
             Whether you’re dining with family, friends, or colleagues, we create a memorable
-            experience with every bite.
+            experience with every bite. Open 24 hours, Swan Birdz is ready to serve you at any time.
           </p>
         </div>
       </section>
@@ -262,14 +264,14 @@ export default function Home() {
             <h2>Reserve your table</h2>
             <p>
               We’d love to welcome you at Swan Birdz. Book a table or get in touch for family
-              dining, events, and special gatherings.
+              dining, events, and special occasions.
             </p>
 
             <div className="contact-list">
-              <p>📍 Dhuri, Punjab</p>
-              <p>📞 +91 00000 00000</p>
-              <p>✉️ hello@swanbirdz.com</p>
-              <p>🕒 10:00 AM to 11:00 PM</p>
+              <p>📍 Sangrur Road, near Singla Palace in Dhuri, Punjab, 148024</p>
+              <p>📞 70974 55555</p>
+              <p>✉️ swanbirdz19@gmail.com</p>
+              <p>🕒 Open 24 Hours</p>
             </div>
           </div>
 
