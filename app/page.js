@@ -1,50 +1,50 @@
 const cuisines = [
-  'North Indian',
-  'Chinese',
-  'South Indian',
-  'Fast Food',
-  'Veg Delights',
-  'Non-Veg Specials',
-  'Desserts',
-  'Beverages',
+  { name: 'North Indian', emoji: '🥘' },
+  { name: 'Chinese', emoji: '🥢' },
+  { name: 'South Indian', emoji: '🍲' },
+  { name: 'Fast Food', emoji: '🍔' },
+  { name: 'Veg Delights', emoji: '🥗' },
+  { name: 'Non-Veg Special', emoji: '🍗' },
+  { name: 'Desserts', emoji: '🍰' },
+  { name: 'Beverages', emoji: '☕' },
 ];
 
 const signatureDishes = [
   {
     title: 'Paneer Tikka',
+    price: '₹249',
     description: 'Perfectly grilled and charred with a smoky, spicy finish.',
-    image:
-      'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=900&q=80',
   },
   {
     title: 'Butter Chicken',
+    price: '₹289',
     description: 'Rich, creamy, and deeply flavorful with a classic home-style feel.',
-    image:
-      'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=900&q=80',
   },
   {
     title: 'Veg Biryani',
+    price: '₹219',
     description: 'Fragrant basmati rice layered with spices and fresh vegetables.',
-    image:
-      'https://images.unsplash.com/photo-1654922207993-2952fec328ae?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1654922207993-2952fec328ae?auto=format&fit=crop&w=900&q=80',
   },
   {
-    title: 'Chicken Noodles',
+    title: 'Hakka Noodles',
+    price: '₹179',
     description: 'Wok-tossed noodles packed with savory flavors and bold taste.',
-    image:
-      'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80',
   },
   {
     title: 'Masala Dosa',
+    price: '₹119',
     description: 'Crispy, golden, and satisfying with sambar and chutney.',
-    image:
-      'https://images.unsplash.com/photo-1625944230945-1b7d7d0d6f4b?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1625944230945-1b7d7d0d6f4b?auto=format&fit=crop&w=900&q=80',
   },
   {
     title: 'Gulab Jamun',
+    price: '₹89',
     description: 'A sweet ending to every meal with warm, syrupy richness.',
-    image:
-      'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80',
   },
 ];
 
@@ -60,54 +60,66 @@ const menuSample = [
 ];
 
 const gallery = [
-  'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80',
+  { url: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80', title: 'Premium Dining Setup' },
+  { url: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80', title: 'Elegant Interior' },
+  { url: 'https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=80', title: 'Cozy Ambiance' },
+  { url: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80', title: 'Family Dining Area' },
+  { url: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80', title: 'Signature Dishes' },
+  { url: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80', title: 'Gourmet Platter' },
 ];
 
 const highlights = [
   {
-    title: 'Wide variety',
-    text: 'From classic comfort food to multi-cuisine favorites, there is always something for everyone.',
+    icon: '⭐',
+    title: 'Premium Quality',
+    text: 'Finest ingredients and expert preparation for every dish. Quality you can taste in every bite.',
   },
   {
-    title: 'Warm hospitality',
-    text: 'A welcoming atmosphere for family meals, friends, and special moments.',
+    icon: '❤️',
+    title: 'Warm Hospitality',
+    text: 'A welcoming atmosphere for family meals, celebrations, and special moments.',
   },
   {
-    title: 'Fresh ingredients',
-    text: 'Quality food prepared with care, flavor, and consistency in every bite.',
+    icon: '✨',
+    title: 'Multi-Cuisine',
+    text: 'Diverse menu spanning North Indian, Chinese, South Indian, and Fast Food. Something for everyone.',
   },
 ];
 
 const testimonials = [
   {
-    quote:
-      'The food is delicious and the ambiance is perfect for family dinners. One of the best places in Dhuri.',
-    author: 'Aman S.',
+    quote: 'The food is delicious and the ambiance is perfect for family dinners. One of the best places in Dhuri.',
+    author: 'Aman Singh',
+    rating: 5,
   },
   {
-    quote:
-      'Great variety, excellent taste, and very friendly service. We loved the Chinese and North Indian options.',
-    author: 'Ritika K.',
+    quote: 'Great variety, excellent taste, and very friendly service. We loved the Chinese and North Indian options.',
+    author: 'Ritika Kapoor',
+    rating: 5,
   },
   {
-    quote:
-      'A vibrant place with a warm atmosphere and flavors that keep you coming back for more.',
-    author: 'Harpreet G.',
+    quote: 'A vibrant place with a warm atmosphere and flavors that keep you coming back for more.',
+    author: 'Harpreet Gill',
+    rating: 5,
   },
 ];
 
 export default function Home() {
   return (
     <main className="page-shell">
+      <a
+        href="https://wa.me/917097455555?text=Hello%20Swan%20Birdz!%20I%20would%20like%20to%20make%20a%20reservation%20or%20order."
+        className="whatsapp-button"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Chat on WhatsApp"
+      >
+        💬
+      </a>
+
       <header className="site-header">
         <nav className="nav container" aria-label="Main navigation">
-          <div className="brand">SWAN BIRDZ</div>
-
+          <div className="brand">🦢 SWAN BIRDZ</div>
           <div className="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -115,29 +127,32 @@ export default function Home() {
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
           </div>
-
-          <button className="primary-button" type="button">Book Table</button>
+          <a href="https://wa.me/917097455555?text=Hello%20Swan%20Birdz!%20I%20would%20like%20to%20book%20a%20table." className="primary-button cta-button">
+            📞 Book Now
+          </a>
         </nav>
       </header>
 
       <section id="home" className="hero container">
         <div className="hero-copy">
-          <p className="eyebrow">Dhuri’s favorite dining destination</p>
+          <p className="eyebrow">Dhuri’s premium dining destination</p>
           <h1>Fresh flavors. Family moments. Memorable dining.</h1>
           <p>
             Experience a wide variety of cuisines, signature dishes, and warm hospitality at Swan
-            Birdz.
+            Birdz. Open 24 hours to serve you whenever you crave delicious food.
           </p>
           <div className="hero-actions">
-            <button className="primary-button" type="button">View Menu</button>
-            <button className="secondary-button" type="button">Book Table</button>
+            <a href="#menu" className="primary-button">📋 Explore Menu</a>
+            <a href="https://wa.me/917097455555?text=Hello%20Swan%20Birdz!%20I%20want%20to%20book%20a%20table." className="secondary-button">
+              📞 Reserve Table
+            </a>
           </div>
         </div>
 
         <div className="hero-image-wrap">
           <img
             src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80"
-            alt="Restaurant interior"
+            alt="Swan Birdz restaurant interior"
           />
         </div>
       </section>
@@ -163,6 +178,21 @@ export default function Home() {
             Whether you’re dining with family, friends, or colleagues, we create a memorable
             experience with every bite. Open 24 hours, Swan Birdz is ready to serve you at any time.
           </p>
+
+          <div className="about-stats">
+            <div className="stat-box">
+              <strong>100+</strong>
+              <span>Menu Items</span>
+            </div>
+            <div className="stat-box">
+              <strong>5000+</strong>
+              <span>Happy Clients</span>
+            </div>
+            <div className="stat-box">
+              <strong>24/7</strong>
+              <span>Open</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -173,8 +203,9 @@ export default function Home() {
 
           <div className="cuisine-grid">
             {cuisines.map((item) => (
-              <div key={item} className="cuisine-card">
-                <h3>{item}</h3>
+              <div key={item.name} className="cuisine-card">
+                <span className="cuisine-emoji">{item.emoji}</span>
+                <h3>{item.name}</h3>
               </div>
             ))}
           </div>
@@ -184,11 +215,15 @@ export default function Home() {
       <section id="menu" className="container section-spacing">
         <p className="eyebrow">Signature dishes</p>
         <h2>Popular favorites</h2>
+        <p className="section-subtitle">Handpicked specialties prepared to perfection</p>
 
         <div className="dish-grid">
           {signatureDishes.map((dish) => (
             <article key={dish.title} className="dish-card">
-              <img src={dish.image} alt={dish.title} />
+              <div className="dish-image-wrap">
+                <img src={dish.image} alt={dish.title} />
+                <span className="dish-price-tag">{dish.price}</span>
+              </div>
               <div className="dish-content">
                 <h3>{dish.title}</h3>
                 <p>{dish.description}</p>
@@ -206,13 +241,20 @@ export default function Home() {
           <div className="menu-list">
             {menuSample.map((item) => (
               <div key={item.name} className="menu-item">
-                <div>
+                <div className="menu-item-info">
                   <h4>{item.name}</h4>
                   <span>{item.category}</span>
                 </div>
                 <strong>{item.price}</strong>
               </div>
             ))}
+          </div>
+
+          <div className="menu-cta">
+            <p>Want a full menu and order assistance?</p>
+            <a href="https://wa.me/917097455555?text=Can%20you%20send%20the%20full%20menu%20for%20Swan%20Birdz%3F" className="primary-button">
+              📲 Request Full Menu
+            </a>
           </div>
         </div>
       </section>
@@ -223,17 +265,26 @@ export default function Home() {
           <h2>A glimpse of the experience</h2>
 
           <div className="gallery-grid">
-            {gallery.map((image, index) => (
-              <img key={index} src={image} alt={`Swan Birdz gallery ${index + 1}`} />
+            {gallery.map((item, index) => (
+              <div key={index} className="gallery-item">
+                <img src={item.url} alt={item.title} />
+                <div className="gallery-overlay">
+                  <p>{item.title}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       <section className="container section-spacing highlights-section">
+        <p className="eyebrow text-center">Why choose us</p>
+        <h2 className="text-center">Excellence in every aspect</h2>
+
         <div className="highlight-grid">
           {highlights.map((item) => (
             <div key={item.title} className="highlight-card">
+              <div className="highlight-icon">{item.icon}</div>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
             </div>
@@ -249,8 +300,9 @@ export default function Home() {
           <div className="testimonial-grid">
             {testimonials.map((item) => (
               <div key={item.author} className="testimonial-card">
+                <div className="stars">{'⭐'.repeat(item.rating)}</div>
                 <p className="quote">“{item.quote}”</p>
-                <span>{item.author}</span>
+                <span className="author">— {item.author}</span>
               </div>
             ))}
           </div>
@@ -261,41 +313,919 @@ export default function Home() {
         <div className="container contact-grid section-spacing">
           <div className="contact-copy">
             <p className="eyebrow light">Contact us</p>
-            <h2>Reserve your table</h2>
+            <h2>Reserve your table today</h2>
             <p>
-              We’d love to welcome you at Swan Birdz. Book a table or get in touch for family
-              dining, events, and special occasions.
+              We’d love to welcome you at Swan Birdz. Book a table or get in touch for family dining,
+              celebrations, or everyday cravings.
             </p>
 
             <div className="contact-list">
-              <p>📍 Sangrur Road, near Singla Palace in Dhuri, Punjab, 148024</p>
-              <p>📞 70974 55555</p>
-              <p>✉️ swanbirdz19@gmail.com</p>
-              <p>🕒 Open 24 Hours</p>
+              <div className="contact-item">
+                <span className="contact-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <p>Sangrur Road, near Singla Palace<br />Dhuri, Punjab, 148024</p>
+                </div>
+              </div>
+              <div className="contact-item">
+                <span className="contact-icon">📞</span>
+                <div>
+                  <strong>Phone</strong>
+                  <p><a href="tel:7097455555">70974 55555</a></p>
+                </div>
+              </div>
+              <div className="contact-item">
+                <span className="contact-icon">✉️</span>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:swanbirdz19@gmail.com">swanbirdz19@gmail.com</a></p>
+                </div>
+              </div>
+              <div className="contact-item">
+                <span className="contact-icon">🕒</span>
+                <div>
+                  <strong>Hours</strong>
+                  <p>Open 24 Hours • 7 Days a Week</p>
+                </div>
+              </div>
             </div>
+
+            <a href="https://wa.me/917097455555?text=Hello%20Swan%20Birdz!%20I%20want%20to%20make%20a%20reservation." className="primary-button whatsapp-link">
+              💬 Chat on WhatsApp
+            </a>
           </div>
 
-          <form className="booking-form">
-            <input type="text" placeholder="Your Name" />
-            <input type="tel" placeholder="Phone Number" />
-            <input type="email" placeholder="Email Address" />
-            <input type="date" placeholder="Date" />
-            <input type="time" placeholder="Time" />
-            <input type="number" placeholder="Guests" min="1" max="20" />
-            <textarea placeholder="Your Message" rows="4" />
-            <button className="primary-button form-button" type="button">
-              Send Enquiry
-            </button>
-          </form>
+          <div className="booking-form-wrapper">
+            <form className="booking-form">
+              <h3>Quick Reservation</h3>
+              <input type="text" placeholder="Your Name" required />
+              <input type="tel" placeholder="Phone Number" required />
+              <input type="email" placeholder="Email Address" required />
+              <input type="date" required />
+              <input type="time" required />
+              <select defaultValue="" required>
+                <option value="">Select number of guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6+">6+ Guests</option>
+              </select>
+              <textarea rows="3" placeholder="Special requests (optional)" />
+              <button className="primary-button form-button" type="submit">✅ Confirm Reservation</button>
+            </form>
+          </div>
+        </div>
+
+        <div className="map-section">
+          <div className="container">
+            <h3>Find Us on the Map</h3>
+            <div className="map-container">
+              <iframe
+                title="Swan Birdz Location"
+                src="https://www.google.com/maps?q=Sangrur%20Road%20near%20Singla%20Palace%20Dhuri%20Punjab&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
       <footer className="site-footer">
-        <div className="container footer-inner">
-          <p>© 2025 SWAN BIRDZ</p>
-          <p>Fresh food • Great taste • Warm hospitality</p>
+        <div className="container">
+          <div className="footer-content">
+            <div className="footer-section">
+              <h4>🦢 SWAN BIRDZ</h4>
+              <p>Premium Multi-Cuisine Restaurant</p>
+              <p>Open 24 Hours • 7 Days a Week</p>
+            </div>
+            <div className="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div className="footer-section">
+              <h4>Connect With Us</h4>
+              <div className="social-links">
+                <a href="https://wa.me/917097455555" target="_blank" rel="noreferrer">💬 WhatsApp</a>
+                <a href="tel:7097455555">📞 Call</a>
+                <a href="mailto:swanbirdz19@gmail.com">✉️ Email</a>
+              </div>
+            </div>
+          </div>
+
+          <div className="footer-bottom">
+            <p>© 2025 Swan Birdz. All rights reserved.</p>
+            <p>Fresh food • Great taste • Warm hospitality</p>
+          </div>
         </div>
       </footer>
+
+      <style jsx global>{`
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+        :root {
+          --bg-soft: #fffaf4;
+          --bg-warm: #f9efe1;
+          --maroon: #7a1f1f;
+          --red-dark: #4d1212;
+          --gold: #d4a648;
+          --gold-soft: #f4d99a;
+          --brown: #2b1c1c;
+          --text: #2a1f1d;
+          --muted: #5d4a45;
+          --card: #ffffff;
+          --border: rgba(75, 42, 28, 0.09);
+          --shadow: 0 20px 45px rgba(51, 28, 12, 0.10);
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+          margin: 0;
+          background: linear-gradient(180deg, #fffaf3 0%, #f7efe5 100%);
+          color: var(--text);
+          font-family: 'Poppins', sans-serif;
+          line-height: 1.6;
+        }
+        img { display: block; max-width: 100%; }
+        a { color: inherit; text-decoration: none; }
+        button, input, select, textarea { font: inherit; }
+
+        .container {
+          width: min(1200px, calc(100% - 32px));
+          margin: 0 auto;
+        }
+
+        .page-shell {
+          background: linear-gradient(180deg, #fffaf3 0%, #fffdf9 100%);
+          color: var(--text);
+        }
+
+        .site-header {
+          position: sticky;
+          top: 0;
+          z-index: 50;
+          background: rgba(43, 28, 28, 0.94);
+          backdrop-filter: blur(10px);
+          border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .nav {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+          padding: 18px 0;
+        }
+
+        .brand {
+          font-size: clamp(1.5rem, 2vw, 2.3rem);
+          font-weight: 800;
+          letter-spacing: 0.07em;
+          color: #fff;
+        }
+
+        .nav-links {
+          display: flex;
+          align-items: center;
+          gap: 22px;
+          color: rgba(255,255,255,0.88);
+          font-weight: 600;
+          font-size: 0.96rem;
+        }
+
+        .nav-links a:hover { color: var(--gold-soft); }
+
+        .primary-button, .secondary-button {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 999px;
+          padding: 0.9rem 1.5rem;
+          font-weight: 700;
+          transition: all 0.25s ease;
+          border: none;
+          cursor: pointer;
+          text-decoration: none;
+        }
+
+        .primary-button {
+          background: linear-gradient(135deg, var(--gold), #f0c971);
+          color: var(--brown);
+          box-shadow: 0 12px 22px rgba(212, 166, 72, 0.28);
+        }
+
+        .primary-button:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 18px 26px rgba(212, 166, 72, 0.30);
+        }
+
+        .secondary-button {
+          background: transparent;
+          color: var(--brown);
+          border: 2px solid rgba(212,166,72,0.85);
+        }
+
+        .secondary-button:hover {
+          background: rgba(212,166,72,0.08);
+        }
+
+        .cta-button {
+          white-space: nowrap;
+        }
+
+        .hero {
+          display: grid;
+          grid-template-columns: 1.05fr 0.95fr;
+          gap: 46px;
+          align-items: center;
+          padding: 72px 0 78px;
+        }
+
+        .hero-copy {
+          padding-right: 8px;
+        }
+
+        .eyebrow {
+          color: var(--maroon);
+          font-size: 0.8rem;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin: 0 0 16px;
+        }
+
+        .eyebrow.light {
+          color: var(--gold-soft);
+        }
+
+        .hero-copy h1 {
+          font-size: clamp(2.7rem, 5vw, 5rem);
+          line-height: 1.06;
+          margin: 0 0 18px;
+          letter-spacing: -0.05em;
+          color: var(--brown);
+          max-width: 620px;
+        }
+
+        .hero-copy p {
+          font-size: 1.12rem;
+          color: var(--muted);
+          line-height: 1.75;
+          margin: 0;
+          max-width: 585px;
+        }
+
+        .hero-actions {
+          margin-top: 28px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 14px;
+        }
+
+        .hero-image-wrap {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .hero-image-wrap img {
+          width: min(100%, 560px);
+          height: 470px;
+          object-fit: cover;
+          border-radius: 34px;
+          box-shadow: var(--shadow);
+          border: 8px solid rgba(255, 255, 255, 0.82);
+        }
+
+        .section-spacing {
+          padding-top: 95px;
+          padding-bottom: 95px;
+        }
+
+        .about {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 46px;
+          align-items: center;
+        }
+
+        .about-image img {
+          width: min(100%, 560px);
+          height: 470px;
+          object-fit: cover;
+          border-radius: 28px;
+          box-shadow: var(--shadow);
+        }
+
+        .about-copy h2,
+        .cuisine-band h2,
+        .section-subtitle + h2,
+        .gallery h2,
+        .testimonials h2,
+        .contact-copy h2,
+        .highlight-grid h2,
+        .text-center {
+          font-size: clamp(2.1rem, 3vw, 3.2rem);
+          margin: 0 0 16px;
+          letter-spacing: -0.04em;
+          color: var(--brown);
+        }
+
+        .about-copy p {
+          color: var(--muted);
+          font-size: 1.06rem;
+          line-height: 1.85;
+        }
+
+        .about-stats {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 16px;
+          margin-top: 26px;
+        }
+
+        .stat-box {
+          background: rgba(212,166,72,0.11);
+          border: 1px solid rgba(122,31,31,0.08);
+          border-radius: 20px;
+          padding: 18px 14px;
+          text-align: center;
+        }
+
+        .stat-box strong {
+          display: block;
+          font-size: 1.9rem;
+          color: var(--maroon);
+        }
+
+        .stat-box span {
+          display: block;
+          color: var(--muted);
+          font-size: 0.9rem;
+          margin-top: 6px;
+        }
+
+        .cuisine-band {
+          background: linear-gradient(135deg, var(--brown) 0%, #3d2625 100%);
+          color: white;
+        }
+
+        .cuisine-band h2 {
+          color: white;
+          margin-bottom: 28px;
+          max-width: 700px;
+        }
+
+        .cuisine-grid {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 18px;
+        }
+
+        .cuisine-card {
+          background: rgba(255,255,255,0.05);
+          border: 1px solid rgba(255,255,255,0.1);
+          border-radius: 20px;
+          padding: 22px 16px;
+          text-align: center;
+          transition: all 0.25s ease;
+        }
+
+        .cuisine-card:hover {
+          transform: translateY(-4px);
+          border-color: rgba(212,166,72,0.7);
+          background: rgba(212,166,72,0.08);
+        }
+
+        .cuisine-emoji {
+          display: block;
+          font-size: 2.1rem;
+          margin-bottom: 8px;
+        }
+
+        .cuisine-card h3 {
+          margin: 0;
+          font-size: 1.08rem;
+          font-weight: 700;
+        }
+
+        .section-subtitle {
+          color: var(--muted);
+          margin-top: -6px;
+          margin-bottom: 26px;
+          font-size: 1.03rem;
+        }
+
+        .dish-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 28px;
+        }
+
+        .dish-card {
+          background: rgba(255,255,255,0.72);
+          border: 1px solid var(--border);
+          border-radius: 28px;
+          overflow: hidden;
+          box-shadow: 0 16px 40px rgba(38, 24, 11, 0.06);
+        }
+
+        .dish-image-wrap {
+          position: relative;
+        }
+
+        .dish-image-wrap img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+        }
+
+        .dish-price-tag {
+          position: absolute;
+          right: 16px;
+          bottom: 16px;
+          background: rgba(122,31,31,0.92);
+          color: white;
+          border-radius: 999px;
+          padding: 8px 14px;
+          font-weight: 800;
+          font-size: 0.92rem;
+        }
+
+        .dish-content {
+          padding: 22px 20px 24px;
+        }
+
+        .dish-content h3 {
+          margin: 0 0 10px;
+          font-size: 1.8rem;
+          color: var(--brown);
+        }
+
+        .dish-content p {
+          margin: 0;
+          color: var(--muted);
+          line-height: 1.7;
+        }
+
+        .menu-preview {
+          background: linear-gradient(180deg, #f8efe6 0%, #f1e4d3 100%);
+        }
+
+        .menu-list {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 16px;
+          margin-top: 26px;
+        }
+
+        .menu-item {
+          background: rgba(255,255,255,0.76);
+          border: 1px solid var(--border);
+          border-radius: 18px;
+          padding: 18px 18px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          box-shadow: 0 10px 22px rgba(40, 17, 9, 0.03);
+        }
+
+        .menu-item-info {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
+
+        .menu-item h4 {
+          margin: 0;
+          font-size: 1.12rem;
+        }
+
+        .menu-item span {
+          color: var(--muted);
+          font-size: 0.9rem;
+        }
+
+        .menu-price {
+          color: var(--maroon);
+          font-size: 1.25rem;
+        }
+
+        .menu-cta {
+          margin-top: 28px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+          background: rgba(255,255,255,0.56);
+          border: 1px solid rgba(122,31,31,0.08);
+          border-radius: 18px;
+          padding: 18px 22px;
+          flex-wrap: wrap;
+        }
+
+        .menu-cta p {
+          margin: 0;
+          color: var(--muted);
+          font-weight: 600;
+        }
+
+        .gallery-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 18px;
+          margin-top: 26px;
+        }
+
+        .gallery-item {
+          position: relative;
+          overflow: hidden;
+          border-radius: 24px;
+          box-shadow: var(--shadow);
+        }
+
+        .gallery-item img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          transition: transform 0.35s ease;
+        }
+
+        .gallery-item:hover img {
+          transform: scale(1.08);
+        }
+
+        .gallery-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(180deg, rgba(0,0,0,0.05), rgba(0,0,0,0.64));
+          display: flex;
+          align-items: end;
+          padding: 18px;
+          color: white;
+          font-weight: 700;
+        }
+
+        .highlight-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 22px;
+          margin-top: 22px;
+        }
+
+        .highlight-card {
+          background: rgba(255,255,255,0.7);
+          border: 1px solid var(--border);
+          border-radius: 26px;
+          padding: 26px 22px;
+          box-shadow: 0 18px 35px rgba(38, 24, 11, 0.04);
+        }
+
+        .highlight-icon {
+          font-size: 2.3rem;
+          margin-bottom: 10px;
+        }
+
+        .highlight-card h3 {
+          margin: 0 0 10px;
+          font-size: 1.5rem;
+          color: var(--brown);
+        }
+
+        .highlight-card p {
+          margin: 0;
+          color: var(--muted);
+          line-height: 1.75;
+        }
+
+        .testimonials {
+          background: linear-gradient(180deg, #f8efe4 0%, #f2e3cc 100%);
+        }
+
+        .testimonial-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 22px;
+          margin-top: 26px;
+        }
+
+        .testimonial-card {
+          background: rgba(255,255,255,0.86);
+          border: 1px solid rgba(122,31,31,0.08);
+          border-radius: 24px;
+          padding: 24px 20px;
+          box-shadow: 0 18px 36px rgba(50, 32, 20, 0.04);
+        }
+
+        .stars {
+          color: #f5b700;
+          letter-spacing: 2px;
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+        }
+
+        .quote {
+          margin: 0 0 14px;
+          color: var(--muted);
+          line-height: 1.8;
+          font-size: 1rem;
+        }
+
+        .author {
+          font-weight: 800;
+          color: var(--maroon);
+        }
+
+        .contact-section {
+          background: linear-gradient(135deg, var(--brown) 0%, #3d2625 100%);
+          color: white;
+        }
+
+        .contact-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 52px;
+          align-items: center;
+        }
+
+        .contact-copy h2 {
+          color: white;
+          margin: 0 0 16px;
+        }
+
+        .contact-copy p {
+          color: rgba(255,255,255,0.78);
+          font-size: 1.05rem;
+          line-height: 1.8;
+        }
+
+        .contact-list {
+          margin-top: 26px;
+          display: grid;
+          gap: 18px;
+        }
+
+        .contact-item {
+          display: flex;
+          gap: 14px;
+          align-items: flex-start;
+        }
+
+        .contact-icon {
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          background: rgba(212,166,72,0.14);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.2rem;
+        }
+
+        .contact-item strong {
+          display: block;
+          margin-bottom: 4px;
+          color: white;
+        }
+
+        .contact-item p {
+          margin: 0;
+          color: rgba(255,255,255,0.82);
+        }
+
+        .whatsapp-link {
+          margin-top: 22px;
+          display: inline-flex;
+        }
+
+        .booking-form-wrapper {
+          display: flex;
+          justify-content: center;
+        }
+
+        .booking-form {
+          width: min(100%, 520px);
+          display: grid;
+          gap: 14px;
+          padding: 28px 24px;
+          background: rgba(255,255,255,0.95);
+          border-radius: 26px;
+          box-shadow: 0 24px 48px rgba(0,0,0,0.18);
+        }
+
+        .booking-form h3 {
+          margin: 0 0 4px;
+          font-size: 1.8rem;
+          color: var(--brown);
+        }
+
+        .booking-form input,
+        .booking-form select,
+        .booking-form textarea {
+          width: 100%;
+          border: 1px solid rgba(77, 18, 18, 0.12);
+          border-radius: 14px;
+          padding: 0.9rem 1rem;
+          background: #fffdfb;
+          color: var(--brown);
+          font-size: 0.98rem;
+        }
+
+        .booking-form textarea {
+          resize: vertical;
+          min-height: 110px;
+        }
+
+        .form-button {
+          margin-top: 8px;
+          width: 100%;
+          border: none;
+          cursor: pointer;
+        }
+
+        .map-section {
+          padding-bottom: 90px;
+        }
+
+        .map-section h3 {
+          color: white;
+          font-size: 2rem;
+          margin: 0 0 18px;
+        }
+
+        .map-container {
+          overflow: hidden;
+          border-radius: 22px;
+          border: 2px solid rgba(212,166,72,0.4);
+          box-shadow: 0 22px 40px rgba(0,0,0,0.14);
+        }
+
+        .map-container iframe {
+          display: block;
+          width: 100%;
+          min-height: 420px;
+          border: 0;
+        }
+
+        .site-footer {
+          background: #1b1414;
+          color: white;
+          border-top: 2px solid rgba(212,166,72,0.3);
+        }
+
+        .footer-content {
+          display: grid;
+          grid-template-columns: 1.3fr 1fr 1fr;
+          gap: 28px;
+          padding: 36px 0 24px;
+        }
+
+        .footer-section h4 {
+          margin: 0 0 12px;
+          font-size: 1.2rem;
+          color: #f7d98b;
+        }
+
+        .footer-section p,
+        .footer-section li,
+        .footer-section a {
+          color: rgba(255,255,255,0.76);
+          line-height: 1.9;
+        }
+
+        .footer-section ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        .social-links {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .footer-bottom {
+          border-top: 1px solid rgba(255,255,255,0.1);
+          padding: 16px 0 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 14px;
+          flex-wrap: wrap;
+          color: rgba(255,255,255,0.8);
+          font-size: 0.96rem;
+        }
+
+        .whatsapp-button {
+          position: fixed;
+          right: 22px;
+          bottom: 22px;
+          z-index: 50;
+          width: 62px;
+          height: 62px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, #25d366, #1ebc5a);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.8rem;
+          box-shadow: 0 18px 30px rgba(37, 211, 102, 0.3);
+        }
+
+        @media (max-width: 980px) {
+          .nav {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          .nav-links {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          .hero,
+          .about,
+          .contact-grid,
+          .dish-grid,
+          .highlight-grid,
+          .testimonial-grid,
+          .gallery-grid,
+          .cuisine-grid,
+          .menu-list,
+          .footer-content {
+            grid-template-columns: 1fr;
+          }
+
+          .hero {
+            padding-top: 56px;
+          }
+
+          .hero-copy,
+          .about-copy {
+            text-align: center;
+          }
+
+          .hero-copy p,
+          .hero-copy h1 {
+            max-width: none;
+          }
+
+          .hero-actions,
+          .menu-cta {
+            justify-content: center;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .brand {
+            text-align: center;
+            width: 100%;
+          }
+
+          .nav {
+            padding-top: 14px;
+            padding-bottom: 14px;
+          }
+
+          .hero-copy h1 {
+            font-size: 2.5rem;
+          }
+
+          .section-spacing {
+            padding-top: 74px;
+            padding-bottom: 74px;
+          }
+
+          .hero-image-wrap img,
+          .about-image img { height: 360px; }
+
+          .menu-item {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          .whatsapp-button {
+            width: 58px;
+            height: 58px;
+            right: 14px;
+            bottom: 14px;
+          }
+
+          .primary-button, .secondary-button {
+            width: 100%;
+          }
+        }
+      `}</style>
     </main>
   );
 }
