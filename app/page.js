@@ -31,7 +31,7 @@ const signatureDishes = [
   {
     title: 'Hakka Noodles',
     price: '₹179',
-    description: 'Wok-tossed noodles packed with savory flavors and bold taste.',
+    description: 'Wok-tossed noodles packed with bold savory taste.',
     image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80',
   },
   {
@@ -69,51 +69,21 @@ const gallery = [
 ];
 
 const highlights = [
-  {
-    icon: '⭐',
-    title: 'Premium Quality',
-    text: 'Finest ingredients and expert preparation for every dish. Quality you can taste in every bite.',
-  },
-  {
-    icon: '❤️',
-    title: 'Warm Hospitality',
-    text: 'A welcoming atmosphere for family meals, celebrations, and special moments.',
-  },
-  {
-    icon: '✨',
-    title: 'Multi-Cuisine',
-    text: 'Diverse menu spanning North Indian, Chinese, South Indian, and Fast Food. Something for everyone.',
-  },
+  { icon: '⭐', title: 'Premium Quality', text: 'Finest ingredients and expert preparation for every dish.' },
+  { icon: '❤️', title: 'Warm Hospitality', text: 'A welcoming atmosphere for family meals and special moments.' },
+  { icon: '✨', title: 'Multi-Cuisine', text: 'A diverse menu spanning North Indian, Chinese, South Indian, and more.' },
 ];
 
 const testimonials = [
-  {
-    quote: 'The food is delicious and the ambiance is perfect for family dinners. One of the best places in Dhuri.',
-    author: 'Aman Singh',
-    rating: 5,
-  },
-  {
-    quote: 'Great variety, excellent taste, and very friendly service. We loved the Chinese and North Indian options.',
-    author: 'Ritika Kapoor',
-    rating: 5,
-  },
-  {
-    quote: 'A vibrant place with a warm atmosphere and flavors that keep you coming back for more.',
-    author: 'Harpreet Gill',
-    rating: 5,
-  },
+  { quote: 'The food is delicious and the ambiance is perfect for family dinners. One of the best places in Dhuri.', author: 'Aman Singh', rating: 5 },
+  { quote: 'Great variety, excellent taste, and very friendly service. We loved the Chinese and North Indian options.', author: 'Ritika Kapoor', rating: 5 },
+  { quote: 'A vibrant place with a warm atmosphere and flavors that keep you coming back for more.', author: 'Harpreet Gill', rating: 5 },
 ];
 
 export default function Home() {
   return (
     <main className="page-shell">
-      <a
-        href="https://wa.me/917097455555?text=Hello%20Swan%20Birdz!%20I%20would%20like%20to%20make%20a%20reservation%20or%20order."
-        className="whatsapp-button"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Chat on WhatsApp"
-      >
+      <a href="https://wa.me/917097455555?text=Hello%20Swan%20Birdz!%20I%20would%20like%20to%20make%20a%20reservation%20or%20order." className="whatsapp-button" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
         💬
       </a>
 
@@ -136,62 +106,41 @@ export default function Home() {
       <section id="home" className="hero container">
         <div className="hero-copy">
           <p className="eyebrow">Dhuri’s premium dining destination</p>
-          <h1>Fresh flavors. Family moments. Memorable dining.</h1>
+          <h1>Fresh flavors. Memorable dining. Pure luxury.</h1>
           <p>
-            Experience a wide variety of cuisines, signature dishes, and warm hospitality at Swan
-            Birdz. Open 24 hours to serve you whenever you crave delicious food.
+            Experience a refined multi-cuisine journey at Swan Birdz — from signature Indian classics
+            to comforting fast food and elegant family dining. Open 24 hours for your convenience.
           </p>
           <div className="hero-actions">
             <a href="#menu" className="primary-button">📋 Explore Menu</a>
-            <a href="https://wa.me/917097455555?text=Hello%20Swan%20Birdz!%20I%20want%20to%20book%20a%20table." className="secondary-button">
-              📞 Reserve Table
-            </a>
+            <a href="https://wa.me/917097455555?text=Hello%20Swan%20Birdz!%20I%20want%20to%20book%20a%20table." className="secondary-button">📞 Reserve Table</a>
           </div>
         </div>
 
         <div className="hero-image-wrap">
-          <img
-            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80"
-            alt="Swan Birdz restaurant interior"
-          />
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Luxury restaurant interior" />
         </div>
       </section>
 
       <section id="about" className="about container section-spacing">
         <div className="about-image">
-          <img
-            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80"
-            alt="Food platter"
-          />
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80" alt="Luxury food platter" />
         </div>
 
         <div className="about-copy">
           <p className="eyebrow">About us</p>
-          <h2>A place where every meal feels special</h2>
+          <h2>A refined dining experience in Dhuri</h2>
           <p>
-            Swan Birdz is a lively food destination in Dhuri, known for serving a wide range of
-            delicious food options for every taste. From comforting North Indian flavors to
-            sizzling Chinese dishes, savory fast food, and refreshing beverages, we bring together
-            taste, variety, and hospitality in one place.
+            Swan Birdz is a vibrant food destination in Dhuri, known for serving a wide range of delicious food options for every taste. From comforting North Indian flavors to sizzling Chinese dishes, savory fast food, and refreshing beverages, we bring together taste, variety, and hospitality in one place.
           </p>
           <p>
-            Whether you’re dining with family, friends, or colleagues, we create a memorable
-            experience with every bite. Open 24 hours, Swan Birdz is ready to serve you at any time.
+            Whether you’re dining with family, friends, or colleagues, we create a memorable experience with every bite. Open 24 hours, Swan Birdz is ready to serve you at any time.
           </p>
 
           <div className="about-stats">
-            <div className="stat-box">
-              <strong>100+</strong>
-              <span>Menu Items</span>
-            </div>
-            <div className="stat-box">
-              <strong>5000+</strong>
-              <span>Happy Clients</span>
-            </div>
-            <div className="stat-box">
-              <strong>24/7</strong>
-              <span>Open</span>
-            </div>
+            <div className="stat-box"><strong>100+</strong><span>Menu Items</span></div>
+            <div className="stat-box"><strong>5000+</strong><span>Happy Guests</span></div>
+            <div className="stat-box"><strong>24/7</strong><span>Open</span></div>
           </div>
         </div>
       </section>
@@ -199,7 +148,7 @@ export default function Home() {
       <section className="cuisine-band">
         <div className="container section-spacing">
           <p className="eyebrow light">Our cuisines</p>
-          <h2>Variety that satisfies every craving</h2>
+          <h2>Curated flavors for every craving</h2>
 
           <div className="cuisine-grid">
             {cuisines.map((item) => (
@@ -214,7 +163,7 @@ export default function Home() {
 
       <section id="menu" className="container section-spacing">
         <p className="eyebrow">Signature dishes</p>
-        <h2>Popular favorites</h2>
+        <h2>Chef’s premium selection</h2>
         <p className="section-subtitle">Handpicked specialties prepared to perfection</p>
 
         <div className="dish-grid">
@@ -251,10 +200,8 @@ export default function Home() {
           </div>
 
           <div className="menu-cta">
-            <p>Want a full menu and order assistance?</p>
-            <a href="https://wa.me/917097455555?text=Can%20you%20send%20the%20full%20menu%20for%20Swan%20Birdz%3F" className="primary-button">
-              📲 Request Full Menu
-            </a>
+            <p>Need the full menu or a quick order assistance?</p>
+            <a href="https://wa.me/917097455555?text=Can%20you%20send%20the%20full%20menu%20for%20Swan%20Birdz%3F" className="primary-button">📲 Request Full Menu</a>
           </div>
         </div>
       </section>
@@ -263,14 +210,11 @@ export default function Home() {
         <div className="container">
           <p className="eyebrow">Gallery</p>
           <h2>A glimpse of the experience</h2>
-
           <div className="gallery-grid">
             {gallery.map((item, index) => (
               <div key={index} className="gallery-item">
                 <img src={item.url} alt={item.title} />
-                <div className="gallery-overlay">
-                  <p>{item.title}</p>
-                </div>
+                <div className="gallery-overlay"><p>{item.title}</p></div>
               </div>
             ))}
           </div>
@@ -280,7 +224,6 @@ export default function Home() {
       <section className="container section-spacing highlights-section">
         <p className="eyebrow text-center">Why choose us</p>
         <h2 className="text-center">Excellence in every aspect</h2>
-
         <div className="highlight-grid">
           {highlights.map((item) => (
             <div key={item.title} className="highlight-card">
@@ -296,7 +239,6 @@ export default function Home() {
         <div className="container">
           <p className="eyebrow">Testimonials</p>
           <h2>What guests say</h2>
-
           <div className="testimonial-grid">
             {testimonials.map((item) => (
               <div key={item.author} className="testimonial-card">
@@ -314,10 +256,7 @@ export default function Home() {
           <div className="contact-copy">
             <p className="eyebrow light">Contact us</p>
             <h2>Reserve your table today</h2>
-            <p>
-              We’d love to welcome you at Swan Birdz. Book a table or get in touch for family dining,
-              celebrations, or everyday cravings.
-            </p>
+            <p>We’d love to welcome you at Swan Birdz. Book a table or get in touch for family dining, celebrations, or everyday cravings.</p>
 
             <div className="contact-list">
               <div className="contact-item">
@@ -382,12 +321,7 @@ export default function Home() {
           <div className="container">
             <h3>Find Us on the Map</h3>
             <div className="map-container">
-              <iframe
-                title="Swan Birdz Location"
-                src="https://www.google.com/maps?q=Sangrur%20Road%20near%20Singla%20Palace%20Dhuri%20Punjab&output=embed"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              <iframe title="Swan Birdz Location" src="https://www.google.com/maps?q=Sangrur%20Road%20near%20Singla%20Palace%20Dhuri%20Punjab&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
             </div>
           </div>
         </div>
@@ -428,28 +362,30 @@ export default function Home() {
       </footer>
 
       <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
 
         :root {
-          --bg-soft: #fffaf4;
-          --bg-warm: #f9efe1;
-          --maroon: #7a1f1f;
-          --red-dark: #4d1212;
-          --gold: #d4a648;
-          --gold-soft: #f4d99a;
-          --brown: #2b1c1c;
+          --ivory: #f7f1ea;
+          --ivory-strong: #efe3d0;
+          --bg-warm: #f5ecdf;
+          --gold: #c89d5d;
+          --gold-soft: #ecd2a0;
+          --burgundy: #5f1f1e;
+          --burgundy-deep: #3f1717;
+          --brown: #2d201d;
+          --brown-soft: #5a403d;
           --text: #2a1f1d;
-          --muted: #5d4a45;
-          --card: #ffffff;
-          --border: rgba(75, 42, 28, 0.09);
-          --shadow: 0 20px 45px rgba(51, 28, 12, 0.10);
+          --muted: #5a4c45;
+          --card: rgba(255,255,255,0.72);
+          --shadow: 0 18px 45px rgba(48, 28, 14, 0.12);
+          --border: rgba(61, 31, 17, 0.08);
         }
 
         * { box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body {
           margin: 0;
-          background: linear-gradient(180deg, #fffaf3 0%, #f7efe5 100%);
+          background: linear-gradient(180deg, #f9f2ea 0%, #f5ebdf 100%);
           color: var(--text);
           font-family: 'Poppins', sans-serif;
           line-height: 1.6;
@@ -459,12 +395,12 @@ export default function Home() {
         button, input, select, textarea { font: inherit; }
 
         .container {
-          width: min(1200px, calc(100% - 32px));
+          width: min(1180px, calc(100% - 28px));
           margin: 0 auto;
         }
 
         .page-shell {
-          background: linear-gradient(180deg, #fffaf3 0%, #fffdf9 100%);
+          background: linear-gradient(180deg, #f7f0e8 0%, #f5efe7 100%);
           color: var(--text);
         }
 
@@ -472,7 +408,7 @@ export default function Home() {
           position: sticky;
           top: 0;
           z-index: 50;
-          background: rgba(43, 28, 28, 0.94);
+          background: rgba(45, 32, 29, 0.96);
           backdrop-filter: blur(10px);
           border-bottom: 1px solid rgba(255,255,255,0.08);
         }
@@ -481,15 +417,16 @@ export default function Home() {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          gap: 20px;
+          gap: 18px;
           padding: 18px 0;
         }
 
         .brand {
-          font-size: clamp(1.5rem, 2vw, 2.3rem);
+          font-size: clamp(1.4rem, 2vw, 2.3rem);
           font-weight: 800;
-          letter-spacing: 0.07em;
-          color: #fff;
+          letter-spacing: 0.06em;
+          color: white;
+          font-family: 'Cormorant Garamond', serif;
         }
 
         .nav-links {
@@ -498,7 +435,7 @@ export default function Home() {
           gap: 22px;
           color: rgba(255,255,255,0.88);
           font-weight: 600;
-          font-size: 0.96rem;
+          font-size: 0.95rem;
         }
 
         .nav-links a:hover { color: var(--gold-soft); }
@@ -512,79 +449,71 @@ export default function Home() {
           font-weight: 700;
           transition: all 0.25s ease;
           border: none;
-          cursor: pointer;
           text-decoration: none;
+          cursor: pointer;
         }
 
         .primary-button {
-          background: linear-gradient(135deg, var(--gold), #f0c971);
+          background: linear-gradient(135deg, var(--gold), #ebc774);
           color: var(--brown);
-          box-shadow: 0 12px 22px rgba(212, 166, 72, 0.28);
+          box-shadow: 0 14px 28px rgba(200,157,93,0.24);
         }
 
         .primary-button:hover {
           transform: translateY(-2px);
-          box-shadow: 0 18px 26px rgba(212, 166, 72, 0.30);
+          box-shadow: 0 18px 30px rgba(200,157,93,0.30);
         }
 
         .secondary-button {
           background: transparent;
           color: var(--brown);
-          border: 2px solid rgba(212,166,72,0.85);
+          border: 2px solid rgba(200,157,93,0.85);
         }
 
         .secondary-button:hover {
-          background: rgba(212,166,72,0.08);
+          background: rgba(200,157,93,0.08);
         }
 
-        .cta-button {
-          white-space: nowrap;
-        }
+        .cta-button { white-space: nowrap; }
 
         .hero {
           display: grid;
           grid-template-columns: 1.05fr 0.95fr;
-          gap: 46px;
+          gap: 42px;
           align-items: center;
-          padding: 72px 0 78px;
-        }
-
-        .hero-copy {
-          padding-right: 8px;
+          padding: 72px 0 72px;
         }
 
         .eyebrow {
-          color: var(--maroon);
-          font-size: 0.8rem;
+          color: var(--burgundy);
+          font-size: 0.78rem;
           letter-spacing: 0.18em;
           text-transform: uppercase;
           font-weight: 800;
           margin: 0 0 16px;
         }
 
-        .eyebrow.light {
-          color: var(--gold-soft);
-        }
+        .eyebrow.light { color: var(--gold-soft); }
 
         .hero-copy h1 {
-          font-size: clamp(2.7rem, 5vw, 5rem);
-          line-height: 1.06;
+          font-family: 'Cormorant Garamond', serif;
+          font-size: clamp(3rem, 5vw, 4.9rem);
+          line-height: 0.94;
           margin: 0 0 18px;
-          letter-spacing: -0.05em;
+          letter-spacing: -0.045em;
           color: var(--brown);
           max-width: 620px;
         }
 
         .hero-copy p {
-          font-size: 1.12rem;
+          font-size: 1.08rem;
           color: var(--muted);
-          line-height: 1.75;
-          margin: 0;
-          max-width: 585px;
+          line-height: 1.8;
+          max-width: 560px;
         }
 
         .hero-actions {
-          margin-top: 28px;
+          margin-top: 26px;
           display: flex;
           flex-wrap: wrap;
           gap: 14px;
@@ -597,51 +526,48 @@ export default function Home() {
         }
 
         .hero-image-wrap img {
-          width: min(100%, 560px);
-          height: 470px;
+          width: min(100%, 500px);
+          height: 420px;
           object-fit: cover;
-          border-radius: 34px;
+          border-radius: 30px;
           box-shadow: var(--shadow);
-          border: 8px solid rgba(255, 255, 255, 0.82);
+          border: 8px solid rgba(255,255,255,0.82);
         }
 
         .section-spacing {
-          padding-top: 95px;
-          padding-bottom: 95px;
+          padding-top: 90px;
+          padding-bottom: 90px;
         }
 
         .about {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          gap: 46px;
+          gap: 40px;
           align-items: center;
         }
 
         .about-image img {
-          width: min(100%, 560px);
-          height: 470px;
+          width: min(100%, 500px);
+          height: 410px;
           object-fit: cover;
-          border-radius: 28px;
+          border-radius: 26px;
           box-shadow: var(--shadow);
+          border: 8px solid rgba(255,255,255,0.8);
         }
 
-        .about-copy h2,
-        .cuisine-band h2,
-        .section-subtitle + h2,
-        .gallery h2,
-        .testimonials h2,
-        .contact-copy h2,
-        .highlight-grid h2,
-        .text-center {
-          font-size: clamp(2.1rem, 3vw, 3.2rem);
+        .about-copy h2, .cuisine-band h2, .gallery h2, .testimonials h2, .contact-copy h2 {
           margin: 0 0 16px;
+          font-size: clamp(2.2rem, 3vw, 3.1rem);
           letter-spacing: -0.04em;
           color: var(--brown);
+          font-family: 'Cormorant Garamond', serif;
+          font-weight: 700;
         }
 
         .about-copy p {
+          margin: 0 0 12px;
           color: var(--muted);
-          font-size: 1.06rem;
+          font-size: 1.04rem;
           line-height: 1.85;
         }
 
@@ -649,39 +575,38 @@ export default function Home() {
           display: grid;
           grid-template-columns: repeat(3, minmax(0, 1fr));
           gap: 16px;
-          margin-top: 26px;
+          margin-top: 18px;
         }
 
         .stat-box {
-          background: rgba(212,166,72,0.11);
+          background: rgba(200,157,93,0.08);
           border: 1px solid rgba(122,31,31,0.08);
-          border-radius: 20px;
-          padding: 18px 14px;
+          border-radius: 18px;
+          padding: 18px 12px;
           text-align: center;
         }
 
         .stat-box strong {
           display: block;
-          font-size: 1.9rem;
-          color: var(--maroon);
+          font-size: 1.8rem;
+          color: var(--burgundy);
         }
 
         .stat-box span {
           display: block;
+          margin-top: 6px;
           color: var(--muted);
           font-size: 0.9rem;
-          margin-top: 6px;
         }
 
         .cuisine-band {
-          background: linear-gradient(135deg, var(--brown) 0%, #3d2625 100%);
+          background: linear-gradient(135deg, #2d201d 0%, #442726 100%);
           color: white;
         }
 
         .cuisine-band h2 {
           color: white;
-          margin-bottom: 28px;
-          max-width: 700px;
+          margin-bottom: 26px;
         }
 
         .cuisine-grid {
@@ -691,8 +616,8 @@ export default function Home() {
         }
 
         .cuisine-card {
-          background: rgba(255,255,255,0.05);
-          border: 1px solid rgba(255,255,255,0.1);
+          background: rgba(255,255,255,0.04);
+          border: 1px solid rgba(255,255,255,0.08);
           border-radius: 20px;
           padding: 22px 16px;
           text-align: center;
@@ -701,75 +626,59 @@ export default function Home() {
 
         .cuisine-card:hover {
           transform: translateY(-4px);
-          border-color: rgba(212,166,72,0.7);
-          background: rgba(212,166,72,0.08);
+          border-color: rgba(200,157,93,0.8);
+          background: rgba(200,157,93,0.08);
         }
 
-        .cuisine-emoji {
-          display: block;
-          font-size: 2.1rem;
-          margin-bottom: 8px;
-        }
-
-        .cuisine-card h3 {
-          margin: 0;
-          font-size: 1.08rem;
-          font-weight: 700;
-        }
+        .cuisine-emoji { display: block; font-size: 2rem; margin-bottom: 8px; }
+        .cuisine-card h3 { margin: 0; font-size: 1.08rem; font-weight: 700; }
 
         .section-subtitle {
           color: var(--muted);
-          margin-top: -6px;
-          margin-bottom: 26px;
-          font-size: 1.03rem;
+          margin: -2px 0 26px;
+          font-size: 1rem;
         }
 
         .dish-grid {
           display: grid;
           grid-template-columns: repeat(3, minmax(0, 1fr));
-          gap: 28px;
+          gap: 24px;
         }
 
         .dish-card {
-          background: rgba(255,255,255,0.72);
+          background: rgba(255,255,255,0.68);
           border: 1px solid var(--border);
-          border-radius: 28px;
+          border-radius: 26px;
           overflow: hidden;
-          box-shadow: 0 16px 40px rgba(38, 24, 11, 0.06);
+          box-shadow: 0 14px 30px rgba(38, 24, 11, 0.05);
         }
 
-        .dish-image-wrap {
-          position: relative;
-        }
-
+        .dish-image-wrap { position: relative; }
         .dish-image-wrap img {
           width: 100%;
-          height: 250px;
+          height: 235px;
           object-fit: cover;
         }
 
         .dish-price-tag {
           position: absolute;
-          right: 16px;
-          bottom: 16px;
-          background: rgba(122,31,31,0.92);
+          right: 14px;
+          bottom: 14px;
+          background: rgba(122,31,31,0.94);
           color: white;
           border-radius: 999px;
-          padding: 8px 14px;
+          padding: 8px 12px;
           font-weight: 800;
-          font-size: 0.92rem;
+          font-size: 0.9rem;
         }
 
-        .dish-content {
-          padding: 22px 20px 24px;
-        }
-
+        .dish-content { padding: 20px 18px 24px; }
         .dish-content h3 {
-          margin: 0 0 10px;
+          margin: 0 0 8px;
           font-size: 1.8rem;
           color: var(--brown);
+          font-family: 'Cormorant Garamond', serif;
         }
-
         .dish-content p {
           margin: 0;
           color: var(--muted);
@@ -777,14 +686,14 @@ export default function Home() {
         }
 
         .menu-preview {
-          background: linear-gradient(180deg, #f8efe6 0%, #f1e4d3 100%);
+          background: linear-gradient(180deg, #f7efe5 0%, #f2e3d0 100%);
         }
 
         .menu-list {
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 16px;
-          margin-top: 26px;
+          margin-top: 24px;
         }
 
         .menu-item {
@@ -796,18 +705,17 @@ export default function Home() {
           align-items: center;
           justify-content: space-between;
           gap: 12px;
-          box-shadow: 0 10px 22px rgba(40, 17, 9, 0.03);
         }
 
         .menu-item-info {
           display: flex;
           flex-direction: column;
-          gap: 5px;
+          gap: 4px;
         }
 
         .menu-item h4 {
           margin: 0;
-          font-size: 1.12rem;
+          font-size: 1.08rem;
         }
 
         .menu-item span {
@@ -815,35 +723,28 @@ export default function Home() {
           font-size: 0.9rem;
         }
 
-        .menu-price {
-          color: var(--maroon);
-          font-size: 1.25rem;
-        }
+        .menu-price { color: var(--burgundy); font-size: 1.18rem; }
 
         .menu-cta {
-          margin-top: 28px;
+          margin-top: 24px;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          gap: 20px;
-          background: rgba(255,255,255,0.56);
-          border: 1px solid rgba(122,31,31,0.08);
-          border-radius: 18px;
-          padding: 18px 22px;
+          gap: 16px;
           flex-wrap: wrap;
+          padding: 18px 20px;
+          border-radius: 18px;
+          background: rgba(255,255,255,0.58);
+          border: 1px solid rgba(122,31,31,0.08);
         }
 
-        .menu-cta p {
-          margin: 0;
-          color: var(--muted);
-          font-weight: 600;
-        }
+        .menu-cta p { margin: 0; color: var(--muted); font-weight: 600; }
 
         .gallery-grid {
           display: grid;
           grid-template-columns: repeat(3, minmax(0, 1fr));
           gap: 18px;
-          margin-top: 26px;
+          margin-top: 22px;
         }
 
         .gallery-item {
@@ -855,19 +756,17 @@ export default function Home() {
 
         .gallery-item img {
           width: 100%;
-          height: 250px;
+          height: 238px;
           object-fit: cover;
           transition: transform 0.35s ease;
         }
 
-        .gallery-item:hover img {
-          transform: scale(1.08);
-        }
+        .gallery-item:hover img { transform: scale(1.06); }
 
         .gallery-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(180deg, rgba(0,0,0,0.05), rgba(0,0,0,0.64));
+          background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.62));
           display: flex;
           align-items: end;
           padding: 18px;
@@ -878,93 +777,70 @@ export default function Home() {
         .highlight-grid {
           display: grid;
           grid-template-columns: repeat(3, minmax(0, 1fr));
-          gap: 22px;
-          margin-top: 22px;
+          gap: 20px;
+          margin-top: 20px;
         }
 
         .highlight-card {
-          background: rgba(255,255,255,0.7);
+          background: rgba(255,255,255,0.72);
           border: 1px solid var(--border);
-          border-radius: 26px;
-          padding: 26px 22px;
-          box-shadow: 0 18px 35px rgba(38, 24, 11, 0.04);
+          border-radius: 24px;
+          padding: 26px 20px;
+          box-shadow: 0 16px 30px rgba(38,24,11,0.04);
         }
 
-        .highlight-icon {
-          font-size: 2.3rem;
-          margin-bottom: 10px;
-        }
-
+        .highlight-icon { font-size: 2.2rem; margin-bottom: 10px; }
         .highlight-card h3 {
           margin: 0 0 10px;
-          font-size: 1.5rem;
+          font-size: 1.7rem;
           color: var(--brown);
+          font-family: 'Cormorant Garamond', serif;
         }
-
-        .highlight-card p {
-          margin: 0;
-          color: var(--muted);
-          line-height: 1.75;
-        }
+        .highlight-card p { margin: 0; color: var(--muted); line-height: 1.75; }
 
         .testimonials {
-          background: linear-gradient(180deg, #f8efe4 0%, #f2e3cc 100%);
+          background: linear-gradient(180deg, #f7efe4 0%, #f0e0c8 100%);
         }
 
         .testimonial-grid {
           display: grid;
           grid-template-columns: repeat(3, minmax(0, 1fr));
-          gap: 22px;
-          margin-top: 26px;
+          gap: 20px;
+          margin-top: 24px;
         }
 
         .testimonial-card {
-          background: rgba(255,255,255,0.86);
-          border: 1px solid rgba(122,31,31,0.08);
-          border-radius: 24px;
-          padding: 24px 20px;
-          box-shadow: 0 18px 36px rgba(50, 32, 20, 0.04);
+          background: rgba(255,255,255,0.8);
+          border: 1px solid rgba(122,31,31,0.09);
+          border-radius: 22px;
+          padding: 22px 18px;
+          box-shadow: 0 16px 30px rgba(42, 24, 22, 0.04);
         }
 
-        .stars {
-          color: #f5b700;
-          letter-spacing: 2px;
-          font-size: 1.2rem;
-          margin-bottom: 10px;
-        }
-
-        .quote {
-          margin: 0 0 14px;
-          color: var(--muted);
-          line-height: 1.8;
-          font-size: 1rem;
-        }
-
-        .author {
-          font-weight: 800;
-          color: var(--maroon);
-        }
+        .stars { color: #f5b700; letter-spacing: 2px; margin-bottom: 10px; font-size: 1.1rem; }
+        .quote { margin: 0 0 14px; color: var(--muted); line-height: 1.8; }
+        .author { font-weight: 800; color: var(--burgundy); }
 
         .contact-section {
-          background: linear-gradient(135deg, var(--brown) 0%, #3d2625 100%);
+          background: linear-gradient(135deg, var(--brown) 0%, #3c241f 100%);
           color: white;
         }
 
         .contact-grid {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          gap: 52px;
+          gap: 54px;
           align-items: center;
         }
 
         .contact-copy h2 {
           color: white;
-          margin: 0 0 16px;
+          margin: 0 0 12px;
         }
 
         .contact-copy p {
-          color: rgba(255,255,255,0.78);
-          font-size: 1.05rem;
+          color: rgba(255,255,255,0.8);
+          font-size: 1.04rem;
           line-height: 1.8;
         }
 
@@ -981,13 +857,13 @@ export default function Home() {
         }
 
         .contact-icon {
-          width: 44px;
-          height: 44px;
-          border-radius: 50%;
-          background: rgba(212,166,72,0.14);
+          width: 42px;
+          height: 42px;
           display: flex;
           align-items: center;
           justify-content: center;
+          border-radius: 50%;
+          background: rgba(200,157,93,0.14);
           font-size: 1.2rem;
         }
 
@@ -999,7 +875,7 @@ export default function Home() {
 
         .contact-item p {
           margin: 0;
-          color: rgba(255,255,255,0.82);
+          color: rgba(255,255,255,0.8);
         }
 
         .whatsapp-link {
@@ -1007,23 +883,20 @@ export default function Home() {
           display: inline-flex;
         }
 
-        .booking-form-wrapper {
-          display: flex;
-          justify-content: center;
-        }
+        .booking-form-wrapper { display: flex; justify-content: center; }
 
         .booking-form {
           width: min(100%, 520px);
           display: grid;
           gap: 14px;
           padding: 28px 24px;
-          background: rgba(255,255,255,0.95);
+          background: rgba(255,255,255,0.96);
           border-radius: 26px;
-          box-shadow: 0 24px 48px rgba(0,0,0,0.18);
+          box-shadow: 0 30px 50px rgba(0,0,0,0.12);
         }
 
         .booking-form h3 {
-          margin: 0 0 4px;
+          margin: 0 0 6px;
           font-size: 1.8rem;
           color: var(--brown);
         }
@@ -1035,18 +908,17 @@ export default function Home() {
           border: 1px solid rgba(77, 18, 18, 0.12);
           border-radius: 14px;
           padding: 0.9rem 1rem;
-          background: #fffdfb;
-          color: var(--brown);
+          background: white;
+          color: var(--text);
           font-size: 0.98rem;
         }
 
         .booking-form textarea {
           resize: vertical;
-          min-height: 110px;
+          min-height: 120px;
         }
 
         .form-button {
-          margin-top: 8px;
           width: 100%;
           border: none;
           cursor: pointer;
@@ -1058,15 +930,15 @@ export default function Home() {
 
         .map-section h3 {
           color: white;
+          margin: 0 0 16px;
           font-size: 2rem;
-          margin: 0 0 18px;
         }
 
         .map-container {
           overflow: hidden;
           border-radius: 22px;
-          border: 2px solid rgba(212,166,72,0.4);
-          box-shadow: 0 22px 40px rgba(0,0,0,0.14);
+          border: 2px solid rgba(200,157,93,0.5);
+          box-shadow: 0 20px 38px rgba(0,0,0,0.12);
         }
 
         .map-container iframe {
@@ -1077,53 +949,44 @@ export default function Home() {
         }
 
         .site-footer {
-          background: #1b1414;
+          background: #150f0e;
           color: white;
-          border-top: 2px solid rgba(212,166,72,0.3);
+          border-top: 2px solid rgba(200,157,93,0.3);
         }
 
         .footer-content {
           display: grid;
           grid-template-columns: 1.3fr 1fr 1fr;
-          gap: 28px;
-          padding: 36px 0 24px;
+          gap: 26px;
+          padding: 34px 0 18px;
         }
 
         .footer-section h4 {
           margin: 0 0 12px;
-          font-size: 1.2rem;
-          color: #f7d98b;
+          color: #f0d4a3;
+          font-size: 1.15rem;
         }
 
         .footer-section p,
         .footer-section li,
         .footer-section a {
-          color: rgba(255,255,255,0.76);
+          color: rgba(255,255,255,0.75);
           line-height: 1.9;
         }
 
-        .footer-section ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-        }
-
-        .social-links {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-        }
+        .footer-section ul { list-style: none; padding: 0; margin: 0; }
+        .social-links { display: flex; flex-direction: column; gap: 8px; }
 
         .footer-bottom {
-          border-top: 1px solid rgba(255,255,255,0.1);
-          padding: 16px 0 24px;
+          border-top: 1px solid rgba(255,255,255,0.08);
+          padding: 18px 0 24px;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          gap: 14px;
+          gap: 12px;
           flex-wrap: wrap;
           color: rgba(255,255,255,0.8);
-          font-size: 0.96rem;
+          font-size: 0.94rem;
         }
 
         .whatsapp-button {
@@ -1143,87 +1006,25 @@ export default function Home() {
         }
 
         @media (max-width: 980px) {
-          .nav {
-            flex-wrap: wrap;
-            justify-content: center;
-          }
-
-          .nav-links {
-            flex-wrap: wrap;
-            justify-content: center;
-          }
-
-          .hero,
-          .about,
-          .contact-grid,
-          .dish-grid,
-          .highlight-grid,
-          .testimonial-grid,
-          .gallery-grid,
-          .cuisine-grid,
-          .menu-list,
-          .footer-content {
-            grid-template-columns: 1fr;
-          }
-
-          .hero {
-            padding-top: 56px;
-          }
-
-          .hero-copy,
-          .about-copy {
-            text-align: center;
-          }
-
-          .hero-copy p,
-          .hero-copy h1 {
-            max-width: none;
-          }
-
-          .hero-actions,
-          .menu-cta {
-            justify-content: center;
-          }
+          .nav { flex-wrap: wrap; justify-content: center; }
+          .nav-links { flex-wrap: wrap; justify-content: center; }
+          .hero, .about, .contact-grid, .dish-grid, .highlight-grid, .testimonial-grid, .gallery-grid, .cuisine-grid, .menu-list, .footer-content { grid-template-columns: 1fr; }
+          .hero { padding-top: 58px; }
+          .hero-copy, .about-copy { text-align: center; }
+          .hero-copy p, .hero-copy h1 { max-width: none; }
+          .hero-actions, .menu-cta { justify-content: center; }
         }
 
         @media (max-width: 640px) {
-          .brand {
-            text-align: center;
-            width: 100%;
-          }
-
-          .nav {
-            padding-top: 14px;
-            padding-bottom: 14px;
-          }
-
-          .hero-copy h1 {
-            font-size: 2.5rem;
-          }
-
-          .section-spacing {
-            padding-top: 74px;
-            padding-bottom: 74px;
-          }
-
-          .hero-image-wrap img,
-          .about-image img { height: 360px; }
-
-          .menu-item {
-            flex-direction: column;
-            align-items: flex-start;
-          }
-
-          .whatsapp-button {
-            width: 58px;
-            height: 58px;
-            right: 14px;
-            bottom: 14px;
-          }
-
-          .primary-button, .secondary-button {
-            width: 100%;
-          }
+          .brand { width: 100%; text-align: center; }
+          .nav { padding-top: 14px; padding-bottom: 14px; }
+          .hero-copy h1 { font-size: 2.8rem; }
+          .section-spacing { padding-top: 70px; padding-bottom: 70px; }
+          .hero-image-wrap img, .about-image img { height: 330px; }
+          .primary-button, .secondary-button { width: 100%; }
+          .hero-actions { flex-direction: column; }
+          .menu-item { flex-direction: column; align-items: flex-start; }
+          .whatsapp-button { width: 58px; height: 58px; right: 14px; bottom: 14px; }
         }
       `}</style>
     </main>
